@@ -1,7 +1,6 @@
 package com.jared.javaChip8.opCodes;
 
 import com.jared.javaChip8.Chip8;
-import com.jared.javaChip8.OpCode;
 
 public class ReturnOpCode extends OpCode {
 

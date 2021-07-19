@@ -2,7 +2,7 @@ package com.jared.javaChip8.opCodes;
 
 import com.jared.javaChip8.Chip8;
 
-public class ClearScreenOpCode extends OpCode {
+public class AddTwoRegistersOpCode extends OpCode {
 
 	@Override
 	public void execute(short opCode, Chip8 chip8) {

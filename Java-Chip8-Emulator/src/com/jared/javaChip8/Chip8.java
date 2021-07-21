@@ -12,8 +12,8 @@ public class Chip8 {
 	
 	private static short STARTING_ADDRESS = 0x200;
 	
-	public int pc;
-	public int I; // memory access address register
+	private short pc;
+	private short I; // memory access address register
 	private short opCode;
 	private byte[] registers;
 	private Deque<Short> stack;
@@ -72,6 +72,18 @@ public class Chip8 {
 	
 	public void stackPush(short value) {
 		stack.push(value);
+	}
+	
+	public void skipNextInstruction() {
+		pc += 2;
+	}
+	
+	public void setPC(short value) {
+		pc = value;
+	}
+	
+	public short getPC() {
+		return pc;
 	}
 	
 	private void fetchOpCode() {

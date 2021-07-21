@@ -16,6 +16,7 @@ public class OpCodeTest {
 	public void testReturnOpCode() {
 		OpCode oc = OpCode.decodeOpCode((short) 0x00EE);
 		assertTrue(oc instanceof ReturnOpCode);
+		
 	}
 	
 	@Test

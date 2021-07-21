@@ -9,6 +9,10 @@ public abstract class OpCode {
 	
 	public static Map<Short, OpCode> opcodeMap = OpCode.getOpCodes();
 	
+	/**
+	 * @param opCode The op code. 
+	 * @param chip8 The chip8 instance to execute the opCode on. 
+	 */
 	public abstract void execute(short opCode, Chip8 chip8);
 	
 	public static OpCode decodeOpCode(short opCode) {
